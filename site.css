@@ -1,0 +1,72 @@
+body {
+    background-image: url(https://www.ankitweblogic.com/html/html_img/exercise1/background.jpg);
+}
+
+.header_image,
+.footer_image {
+    max-width: 100%;
+}
+
+.nav_home_page {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    margin-top: 18px;
+}
+
+.home_page_heading,
+.centered_heading {
+    display: flex;
+    justify-content: center;
+}
+
+.home_page_left_img {
+    border: 5px solid black;
+    float: left;
+}
+
+.home_page_right_img {
+    border: 5px solid black;
+    float: right;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    margin-top: 10px;
+}
+
+.course_left_img {
+    float: left;
+    margin-right: 3px
+}
+
+.course_right_img {
+    float: right;
+    margin-left: 2px
+}
+
+.gallery_span_color {
+    color: rgb(0, 139, 139);
+}
+
+.image_page_main {
+    display: flex;
+    justify-content: center;
+    color: rgb(0, 139, 139);
+}
+
+.gallery_page_div {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+.gallery_page_images {
+    height: 180px;
+    width: 250px;
+    border: 5px solid blue;
+}
