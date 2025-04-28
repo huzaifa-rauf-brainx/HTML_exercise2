@@ -1,63 +1,73 @@
-body {
+.body {
     background-image: url("/assets/images/background.jpg");
 }
 
-.header_image,
-.footer_image {
+.body .header_image,
+.body .footer_image {
+    width: 100%;
     max-width: 100%;
 }
+.main_home_page .home_page_heading, .main_home_page .home_page_subheading, .main_course_page .underlined_heading, .main_gallery_page .underlined_heading {
+    text-decoration: underline;
+}
 
-.nav_home_page {
+.body .nav_home_page {
     display: flex;
     justify-content: center;
     gap: 4px;
     margin-top: 18px;
 }
 
-.home_page_heading,
+.main_home_page .home_page_heading,
 .centered_heading {
     display: flex;
     justify-content: center;
 }
 
-.home_page_left_img {
-    border: 5px solid black;
+.home_page_images .home_page_left_img {
+    border: 5px solid #000000;
     float: left;
+    width: 300px;
+    height: 200px;
 }
 
-.home_page_right_img {
-    border: 5px solid black;
+.home_page_images .home_page_right_img {
+    border: 5px solid #000000;
     float: right;
+    width: 300px;
+    height: 200px;
 }
 
-.navbar {
+.body .navbar {
     display: flex;
     justify-content: center;
     gap: 4px;
     margin-top: 10px;
 }
 
-.course_left_img {
+.main_course_page .course_left_img {
     float: left;
-    margin-right: 3px
+    padding-right: 3px;
+    width: 300px;
 }
 
-.course_right_img {
+.main_course_page .course_right_img {
     float: right;
-    margin-left: 2px
+    padding-left: 3px;
+    width: 300px;
 }
 
-.gallery_span_color {
+.navbar .gallery_span_color {
     color: rgb(0, 139, 139);
 }
 
-.image_page_main {
+.main_gallery_page .image_page_main {
     display: flex;
     justify-content: center;
     color: rgb(0, 139, 139);
 }
 
-.gallery_page_div {
+.main_gallery_page .gallery_page_div {
     display: flex;
     justify-content: center;
     gap: 4px;
@@ -65,8 +75,13 @@ body {
     flex-wrap: wrap;
 }
 
-.gallery_page_images {
+.gallery_page_div .gallery_page_images_div {
     height: 180px;
     width: 250px;
-    border: 5px solid blue;
+    border: 5px solid #0000FF;
+}
+
+.gallery_page_div .gallery_page_images {
+    height: 180px;
+    width: 250px;
 }
