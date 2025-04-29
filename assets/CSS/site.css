@@ -1,57 +1,62 @@
-.body {
+.page_body {
     background-image: url("../images/background.jpg");
 }
 
-.body .header_image,
-.body .footer_image {
+.main_nav .nav_list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+}
+  
+.main_nav .nav_list li::after {
+    content: "|";
+    margin-left: 4px;
+    color: black;
+}
+  
+.nav_list li:last-child::after {
+    content: "";
+}  
+
+.page_body .header_image,
+.page_body .footer_image {
     width: 100%;
     max-width: 100%;
 }
 .main_home_page .home_page_heading, .main_home_page .home_page_subheading, .main_course_page .underlined_heading, .main_gallery_page .underlined_heading {
     text-decoration: underline;
-}
-
-.body .nav_home_page {
-    display: flex;
-    justify-content: center;
-    gap: 4px;
-    margin-top: 18px;
+    font-weight: bold;
 }
 
 .main_home_page .home_page_heading,
-.centered_heading {
+.main_course_page .centered_heading {
     display: flex;
     justify-content: center;
 }
 
-.home_page_images .home_page_left_img {
+.home_page_images .home_img_1 {
     border: 5px solid #000000;
     float: left;
     width: 300px;
     height: 200px;
 }
 
-.home_page_images .home_page_right_img {
+.home_page_images .home_img_2 {
     border: 5px solid #000000;
     float: right;
     width: 300px;
     height: 200px;
 }
 
-.body .navbar {
-    display: flex;
-    justify-content: center;
-    gap: 4px;
-    margin-top: 10px;
-}
-
-.main_course_page .course_left_img {
+.main_course_page .course_img_1 {
     float: left;
     padding-right: 3px;
     width: 300px;
 }
 
-.main_course_page .course_right_img {
+.main_course_page .course_img_2 {
     float: right;
     padding-left: 3px;
     width: 300px;
@@ -75,13 +80,13 @@
     flex-wrap: wrap;
 }
 
-.gallery_page_div .gallery_page_images_div {
+.gallery_page_div .gallery_imgs_div {
     height: 180px;
     width: 250px;
     border: 5px solid #0000FF;
 }
 
-.gallery_page_div .gallery_page_images {
+.gallery_page_div .gallery_imgs {
     height: 180px;
     width: 250px;
 }
